@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function detectUser(){
+	user=prompt("Enter your username");
+	if(user=="Hafiz" || user=="Halim"){
+	document.write("You're Welcome "+user);
+	}
+}
+</script>
+</head>
+<body>
+<script>
+//take user name from user & check user name
+detectUser();
+//if the user name not match or match later
+
+if(!user){
+	var attempt=3;
+	for(i=1;i<=attempt;i++){
+	alert("Type your username correctly");
+	detectUser();
+		if(user=="Hafiz"||user=="Halim")
+			break;
+			
+	}
+		if(attempt>3){
+			alert("Your request has been timmed out");
+		}
+	
+}
+
+</script>
+</body>
+</html>
